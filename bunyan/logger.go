@@ -41,6 +41,7 @@ func (logger *Logger) getBaseData(data map[string]interface{}) map[string]interf
 	}
 	data["name"] = logger.Name
 	data["pid"] = pid
+	data["v"] = 0
 	hostname, err := os.Hostname()
 	if err == nil {
 		data["hostname"] = hostname
